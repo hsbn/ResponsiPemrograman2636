@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ResponsiPemrograman2636
+{
+	class Program
+		{
+			static void Main(string[] args)
+			{
+
+
+
+				Karyawan karyawan = new Karyawan(1,19112599, "Agus", 6000000);
+				Karyawan karyawan2 = new Karyawan(2,191125600, "Bagus", 9000000);
+
+
+				Console.WriteLine("N0. \t NIK \t Nama \t Gaji");
+				Console.WriteLine("--------------------------");
+				karyawan.showKaryawan();
+				karyawan2.showKaryawan();
+
+				Console.WriteLine("\n\n Asik naik gaji nih!!!");
+
+				Console.WriteLine("N0. \t NIK \t Nama \t Gaji");
+				Console.WriteLine("--------------------------");
+				karyawan.naikGaji();
+				karyawan2.naikGaji();
+
+				Console.ReadKey();
+				
+			}
+		}
+}
